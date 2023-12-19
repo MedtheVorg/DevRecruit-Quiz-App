@@ -1,0 +1,90 @@
+[
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Programming Languages",
+    "question": "Which programming language is known for its use in web development and creating dynamic web pages?",
+    "correct_answer": "JavaScript",
+    "incorrect_answers": ["Java", "Python", "C++"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Programming Languages",
+    "question": "In which programming language is the Django framework commonly used?",
+    "correct_answer": "Python",
+    "incorrect_answers": ["Ruby", "JavaScript", "Java"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Programming Languages",
+    "question": "Which programming language is often used for developing mobile applications for iOS?",
+    "correct_answer": "Swift",
+    "incorrect_answers": ["Java", "C#", "Objective-C"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Programming Languages",
+    "question": "What is the primary purpose of the 'C#' programming language?",
+    "correct_answer": "To develop Windows applications and web services",
+    "incorrect_answers": [
+      "To build mobile applications for Android",
+      "To create dynamic web pages",
+      "To develop machine learning algorithms"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Programming Languages",
+    "question": "Which programming language is commonly used for system administration, automation, and scripting?",
+    "correct_answer": "Bash",
+    "incorrect_answers": ["C++", "Java", "Ruby"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Programming Languages",
+    "question": "In which programming language is the Spring framework commonly used?",
+    "correct_answer": "Java",
+    "incorrect_answers": ["C#", "Python", "Ruby"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Programming Languages",
+    "question": "Which programming language is often used for data analysis and machine learning?",
+    "correct_answer": "Python",
+    "incorrect_answers": ["JavaScript", "R", "Java"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Programming Languages",
+    "question": "What is the primary purpose of the 'Go' programming language?",
+    "correct_answer": "To create efficient and reliable software",
+    "incorrect_answers": [
+      "To build web applications",
+      "To develop mobile applications",
+      "To automate network tasks"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Programming Languages",
+    "question": "Which programming language is known for its simplicity and readability, often used by beginners?",
+    "correct_answer": "Python",
+    "incorrect_answers": ["Java", "C++", "JavaScript"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Programming Languages",
+    "question": "In which programming language is the Laravel framework commonly used?",
+    "correct_answer": "PHP",
+    "incorrect_answers": ["Ruby", "JavaScript", "Java"]
+  }
+]

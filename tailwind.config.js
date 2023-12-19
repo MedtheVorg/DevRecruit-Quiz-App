@@ -5,7 +5,9 @@ export default {
     extend: {},
     colors: {
       yellowish: "#FCC822",
+      // yellowish: "#2288fc",
       dark: "#333333",
+      lightgray: "#ECECE8",
     },
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],

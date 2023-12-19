@@ -1,61 +1,52 @@
 import { Link, NavLink } from "react-router-dom";
-import handGraduate from "../assets/Hands-Graduate.svg";
-import { useEffect, useState } from "react";
+import Logo from "./Logo";
 
 const NavBar = () => {
   return (
-    <div className="navbar bg-base-100  justify-between lg:px-16 border-b-[1px] border-b-dark/50 ">
+    <div className="navbar bg-base-100  justify-between lg:px-16 lg:py-0 border-b-[1px] border-b-lightgray transition-all duration-300 ease-in-out ">
       {/*  logo */}
       <div className="navbar-start">
         <Link
           to={"/"}
           className="btn btn-ghost text-xl gap-0 hover:bg-transparent"
         >
-          <span className="relative">
-            <img
-              src={handGraduate}
-              alt="handGraduate image"
-              className="w-[30px] h-[30px] absolute top-[-12px] left-[-12px]"
-            />
-            Dev
-          </span>
-          <span className="text-yellowish">Recruit</span>
+          <Logo />
         </Link>
       </div>
       {/* desktop nav */}
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 gap-x-8">
-          <li>
+      <div className="navbar-center hidden lg:flex h-full">
+        <ul className="menu menu-horizontal px-1 gap-x-4 py-0 h-full">
+          <li className="h-full">
             <NavLink
               to={"/"}
               className={({ isActive }) =>
                 isActive
-                  ? "border-b-2 border-b-yellowish rounded-none "
-                  : "rounded-none border-b-2 border-transparent hover:border-b-yellowish"
+                  ? "border-b-2 border-b-yellowish rounded-none hover:bg-[#ecece8a9] py-0 h-full inline-flex"
+                  : "rounded-none border-b-2 border-transparent hover:border-b-yellowish hover:bg-[#ecece8a9] py-0 h-full inline-flex"
               }
             >
               Home
             </NavLink>
           </li>
-          <li>
+          <li className="h-full ">
             <NavLink
               to={"/info"}
               className={({ isActive }) =>
                 isActive
-                  ? "border-b-2 border-b-yellowish rounded-none "
-                  : "rounded-none border-b-2 border-transparent hover:border-b-yellowish"
+                  ? "border-b-2 border-b-yellowish rounded-none hover:bg-[#ecece8a9] py-0 h-full inline-flex"
+                  : "rounded-none border-b-2 border-transparent hover:border-b-yellowish hover:bg-[#ecece8a9] py-0 h-full inline-flex"
               }
             >
               How it Works?
             </NavLink>
           </li>
-          <li>
+          <li className="h-full">
             <NavLink
               to={"/about"}
               className={({ isActive }) =>
                 isActive
-                  ? "border-b-2 border-b-yellowish rounded-none "
-                  : "rounded-none border-b-2 border-transparent hover:border-b-yellowish"
+                  ? "border-b-2 border-b-yellowish rounded-none hover:bg-[#ecece8a9] py-0 h-full inline-flex"
+                  : "rounded-none border-b-2 border-transparent hover:border-b-yellowish hover:bg-[#ecece8a9] py-0 h-full inline-flex"
               }
             >
               About Us
