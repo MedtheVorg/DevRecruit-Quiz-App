@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import heroSectionImage from "../assets/heroSectionImage.svg";
+import { heroSectionImage } from "../assets";
 import { motion } from "framer-motion";
 
 const HeroSection = () => {

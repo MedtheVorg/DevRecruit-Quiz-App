@@ -19,10 +19,24 @@ export const useStore = () => {
 // wrapper  componenet
 const StoreContext = ({ children }: StoreContextProps) => {
   const [quizTakerName, setQuizTakerName] = useState("");
+  const [selectedCategories, setSetSelectedCategories] = useState<string[]>([
+    "FullStack ",
+    "Programming Languages",
+    "Frameworks",
+  ]);
+  const [quizStarted, setQuizStarted] = useState<boolean>(true);
 
   return (
     <storeContext.Provider
-      value={{ quizTakerName, setQuizTakerName, quizData }}
+      value={{
+        quizTakerName,
+        setQuizTakerName,
+        quizData,
+        selectedCategories,
+        setSetSelectedCategories,
+        quizStarted,
+        setQuizStarted,
+      }}
     >
       {children}
     </storeContext.Provider>

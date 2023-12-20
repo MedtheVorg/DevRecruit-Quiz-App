@@ -6,15 +6,16 @@ export type StoreContextProps = {
 export type StoreContextType = {
   quizTakerName?: string;
   setQuizTakerName?: React.Dispatch<React.SetStateAction<string>>;
-  quizData?: quizDataType;
+  quizData?: quizDataType[];
+  selectedCategories?: string[];
+  setSetSelectedCategories?: React.Dispatch<React.SetStateAction<string[]>>;
+  quizStarted?: boolean;
+  setQuizStarted?: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 export type quizDataType = {
-  frontEnd: quizQuestionType[];
-  backEnd: quizQuestionType[];
-  fullStack: quizQuestionType[];
-  frameworks: quizQuestionType[];
-  languages: quizQuestionType[];
+  name: string;
+  data: quizQuestionType[];
 };
 
 export type quizQuestionType = {
@@ -26,6 +27,23 @@ export type quizQuestionType = {
   incorrect_answers: string[];
 };
 
+export type refactoredQuizQuestionType = {
+  question: string;
+  possibleAnswers: refactoredQuizQuestionPossibleAnswerType[];
+};
+export type refactoredQuizQuestionPossibleAnswerType = {
+  text: string;
+  isSelected: boolean;
+  isCorrect: boolean;
+};
 export type CategoryProps = {
   categoryName: string;
+};
+
+export type selectedAnswerType = {
+  questionIndex: number;
+  selectedAnswerId: number;
+  selectedAnswer: string;
+  correctAnswer: string;
+  isSelected: boolean;
 };

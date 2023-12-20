@@ -1,20 +1,13 @@
-import { useEffect, useState } from "react";
 import { useStore } from "../hooks/useStore";
 import CategoriesModal from "../components/CategoriesModal";
+import QuizContainer from "../components/QuizContainer";
 
 const QuizPage = () => {
-  const { quizTakerName, quizData } = useStore();
-  const [currentTab, seetCurrentTab] = useState(0);
-  useEffect(() => {
-    console.log(quizData);
-  }, []);
+  const { quizStarted } = useStore();
 
-  return (
-    <>
-      <div>nav</div>
-      <CategoriesModal />
-    </>
-  );
+  {
+  }
+  return <>{!quizStarted ? <CategoriesModal /> : <QuizContainer />}</>;
 };
 
 export default QuizPage;

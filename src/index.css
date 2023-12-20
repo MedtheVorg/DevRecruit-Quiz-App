@@ -23,7 +23,7 @@ body {
   letter-spacing: 2px;
   text-transform: capitalize;
   transition-timing-function: ease-in-out;
-  @apply bg-yellowish border-2 border-transparent transition-colors duration-300;
+  @apply bg-yellowish border-2 border-transparent transition-colors duration-300 ease-in-out;
 }
 
 .specialbtn:hover {

@@ -6,6 +6,7 @@ export default {
     colors: {
       yellowish: "#FCC822",
       // yellowish: "#2288fc",
+      // yellowish: "#22fc76",
       dark: "#333333",
       lightgray: "#ECECE8",
     },

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import handGraduate from "../assets/Hands-Graduate.svg";
-import hatGraduate from "../assets/graduate hat.svg";
+import { handGraduate } from "../assets";
+import { graduteHat } from "../assets";
 import { useStore } from "../hooks/useStore";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -78,7 +78,7 @@ const WelcomeSection = () => {
       </div>
       {/* right side */}
       <div className="bg-[#FAFAFA] flex items-center justify-center">
-        <img src={hatGraduate} alt="image of a graduation hat" className="" />
+        <img src={graduteHat} alt="image of a graduation hat" className="" />
       </div>
     </motion.section>
   );
