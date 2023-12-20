@@ -1033,6 +1033,11 @@ html{
   border-end-end-radius: inherit;
 }
 
+.link{
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
 .menu{
   display: flex;
   flex-direction: column;
@@ -1424,6 +1429,16 @@ html{
 
 .input::-webkit-date-and-time-value{
   text-align: inherit;
+}
+
+.link:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.link:focus-visible{
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
 }
 
 :where(.menu li:empty){
@@ -2011,17 +2026,8 @@ html{
   grid-row-end: 2;
 }
 
-.row-end-4{
-  grid-row-end: 4;
-}
-
 .row-end-5{
   grid-row-end: 5;
-}
-
-.mx-4{
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .mb-16{
@@ -2032,12 +2038,20 @@ html{
   margin-bottom: 1rem;
 }
 
+.mt-1{
+  margin-top: 0.25rem;
+}
+
 .mt-12{
   margin-top: 3rem;
 }
 
 .mt-2{
   margin-top: 0.5rem;
+}
+
+.mt-28{
+  margin-top: 7rem;
 }
 
 .mt-3{
@@ -2050,22 +2064,6 @@ html{
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-6{
-  margin-top: 1.5rem;
-}
-
-.mt-9{
-  margin-top: 2.25rem;
-}
-
-.mt-0{
-  margin-top: 0px;
-}
-
-.mt-1{
-  margin-top: 0.25rem;
 }
 
 .inline-block{
@@ -2243,12 +2241,6 @@ html{
   row-gap: 2px;
 }
 
-.space-x-3 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .self-start{
   align-self: flex-start;
 }
@@ -2295,10 +2287,6 @@ html{
 
 .border-t-2{
   border-top-width: 2px;
-}
-
-.border-solid{
-  border-style: solid;
 }
 
 .border-\[\#46c26b\]{
@@ -2445,6 +2433,14 @@ html{
 
 .text-center{
   text-align: center;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+.align-middle{
+  vertical-align: middle;
 }
 
 .text-2xl{

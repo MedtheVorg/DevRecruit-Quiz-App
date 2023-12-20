@@ -1,9 +1,27 @@
 import { motion } from "framer-motion";
-import { homePage, quizPage } from "../assets";
-import { welcomePage } from "../assets";
-
+import { homePage2, quizPage2, welcomePage2 } from "../assets";
+import {  NavLink } from "react-router-dom";
 
 const HowItWorksSection = () => {
+  const data = [{
+    title: "Page d'Accueil",
+    description: "Choisissez Votre Aventure : Personnalisez votre quiz avec 20 questions passionnantes, en sélectionnant votre spécialité et le niveau de difficulté.Explorez Vos Intérêts : Plongez dans des domaines qui vous captivent en choisissant parmi nos 20 questions soigneusement élaborées.Adaptez le Défi : Ajustez le niveau de difficulté selon votre aisance, offrant une expérience adaptable pour tous les niveaux de connaissances.Créez Votre Parcours : Façonnez votre parcours d'apprentissage en choisissant la spécialité qui vous passionne le plus et en défiant vos connaissances avec des niveaux de difficulté progressifs.",
+    image: welcomePage2,
+    link: "/welcome",
+  },
+
+  {
+    title: "Home Page",
+    description: "S'ouvre sur un accueil chaleureux par notre logo distinctif, symbole de notre engagement pour un apprentissage ludique et interactif Propose l'exploration d'un logo élégant, une représentation dynamique de notre passion éducative offrant une expérience engageante Présente un titre évocateur juste en dessous, ouvrant la porte à un monde captivant de connaissances et de divertissement Attend votre clic sur un bouton de démarrage bien en évidence, prêt à vous propulser dans une expérience interactive et stimulante.",
+    image: homePage2,
+    link: "/"
+  },
+  {
+    title: "Create Your Quiz",
+    description: "Personnalisez Votre Aventure de Quiz : Sélection de domaine : L'utilisateur choisit un domaine d'intérêt. Démarrage du quiz : En cliquant sur Start, le test de 20 questions commence. Chronomètre : Un timer est en place pour chaque question. Réponses : L'utilisateur répond aux questions tout au long du test. Résultats : À la fin, les résultats du quiz sont affichés.",
+    image: quizPage2,
+    link: "/quiz",
+  }]
   return (
     <motion.section
       className=" lg:mx-auto h-full p-8 mt-1 flex flex-col  items-center"
@@ -15,47 +33,26 @@ const HowItWorksSection = () => {
       <h1 className="text-4xl text-yellowish mt-8 text-center font-medium sm:text-5xl md:text-7xl">
         How it Works ?
       </h1>
-      <h2 className="text-2xl text-blue-600 mt-4 font-medium">
+      <h1 className="text-2xl text-blue-600 mt-4 font-medium">
         Explore the features and functionality of our quiz platform.
-      </h2>
+      </h1>
 
-      <div className=" flex justify-between gap-8 mt-8">
-        
-        <div className=" border-solid border-2 border-yellowish ">
-          <img className="object-cover w-full" src={homePage} alt="image of a graduation hat"  />
-            <p>
-            <h1>Page d'Accueil </h1>
-            notre page d'accueil commence par un accueil chaleureux grâce à notre logo distinctif, représentant notre engagement pour un apprentissage ludique. Explorez notre logo élégant, reflet de la passion éducative, puis découvrez notre titre évocateur en dessous. Le bouton de démarrage vous attend, prêt pour une expérience interactive. La navigation fluide de la page facilite la création, le partage et la participation à des quiz passionnants. En résumé, plongez dans l'éducation ludique avec notre plateforme dès maintenant.
+      <div className=" flex justify-between gap-8 mt-28">
+        {data.map((item, index) => (
+          <NavLink
+            to={item.link}>
+            <div className="content" key={index}>
+              <img className="object-cover w-full flag-item" src={item.image} alt="image of a graduation hat" />
+              <h1 >{item.title}</h1>
+              <p className="text-justify content-item flex align-middle">
+                {item.description}
               </p>
-          </div>
-        <div className=" border-solid border-2 border-yellowish ">
-          <img className="object-cover w-full" src={welcomePage} alt="image of a graduation hat" />
-          <h3>Home Page <span className="use-content"></span></h3>
-          <p>
-            S'ouvre sur un accueil chaleureux par notre logo distinctif, symbole de notre engagement pour un apprentissage ludique et interactif.
-            Propose l'exploration d'un logo élégant, une représentation dynamique de notre passion éducative offrant une expérience engageante.
-            Présente un titre évocateur juste en dessous, ouvrant la porte à un monde captivant de connaissances et de divertissement.
-            Attend votre clic sur un bouton de démarrage bien en évidence, prêt à vous propulser dans une expérience interactive et stimulante.
-          </p>
-        </div>
-        <div className="  border-solid border-2 border-yellowish ">
-          <img className="object-cover w-full" src={quizPage} alt="image of a graduation hat" />
-          <h3>Create Your Quiz: <span className="use-content"></span></h3>
-          <p>
-
-            Personnalisez Votre Aventure de Quiz :
-            Choisissez parmi une gamme de 20 questions passionnantes et personnalisez votre expérience en sélectionnant votre spécialité préférée et le niveau de difficulté qui vous convient.
-            Explorez Vos Domaines d'Intérêt :
-            Plongez dans le monde des quiz en ayant le contrôle total. Sélectionnez la spécialité qui suscite votre curiosité parmi nos 20 questions soigneusement élaborées.
-            Adaptez le Défi à Votre Niveau :
-            Du débutant à l'expert, ajustez le niveau de difficulté selon votre aisance. Notre page de quiz offre une expérience adaptable pour tous les niveaux de connaissances.
-            Créez Votre Propre Parcours d'Apprentissage :
-            Avec 20 questions à portée de main, créez votre propre parcours d'apprentissage en choisissant la spécialité qui vous passionne le plus et défiez-vous avec des niveaux de difficulté progressifs.
-          </p>
-        </div>
-        </div>
+            </div>
+          </NavLink>
+        ))}
+      </div>
     </motion.section>
-    
+
 
 
   );
