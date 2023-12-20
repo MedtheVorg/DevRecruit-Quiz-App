@@ -2011,8 +2011,17 @@ html{
   grid-row-end: 2;
 }
 
+.row-end-4{
+  grid-row-end: 4;
+}
+
 .row-end-5{
   grid-row-end: 5;
+}
+
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mb-16{
@@ -2021,10 +2030,6 @@ html{
 
 .mb-4{
   margin-bottom: 1rem;
-}
-
-.ml-2{
-  margin-left: 0.5rem;
 }
 
 .mt-12{
@@ -2045,6 +2050,22 @@ html{
 
 .mt-8{
   margin-top: 2rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
+}
+
+.mt-9{
+  margin-top: 2.25rem;
+}
+
+.mt-0{
+  margin-top: 0px;
+}
+
+.mt-1{
+  margin-top: 0.25rem;
 }
 
 .inline-block{
@@ -2119,24 +2140,16 @@ html{
   flex: 1 1 0%;
 }
 
+.basis-\[10\%\]{
+  flex-basis: 10%;
+}
+
 .basis-\[30\%\]{
   flex-basis: 30%;
 }
 
-.basis-\[50\%\]{
-  flex-basis: 50%;
-}
-
-.basis-\[20\%\]{
-  flex-basis: 20%;
-}
-
 .basis-\[60\%\]{
   flex-basis: 60%;
-}
-
-.basis-\[10\%\]{
-  flex-basis: 10%;
 }
 
 .rotate-180{
@@ -2230,6 +2243,12 @@ html{
   row-gap: 2px;
 }
 
+.space-x-3 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .self-start{
   align-self: flex-start;
 }
@@ -2276,6 +2295,10 @@ html{
 
 .border-t-2{
   border-top-width: 2px;
+}
+
+.border-solid{
+  border-style: solid;
 }
 
 .border-\[\#46c26b\]{
@@ -2363,11 +2386,6 @@ html{
 
 .bg-yellowish\/50{
   background-color: rgb(252 200 34 / 0.5);
-}
-
-.bg-neutral{
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
 }
 
 .object-cover{
@@ -2741,6 +2759,11 @@ body {
     line-height: 2rem;
   }
 
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -2759,11 +2782,6 @@ body {
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 }
 
