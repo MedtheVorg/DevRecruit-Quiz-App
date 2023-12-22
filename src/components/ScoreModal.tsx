@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import { useStore } from "../hooks/useStore";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
