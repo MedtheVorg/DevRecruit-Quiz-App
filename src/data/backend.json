@@ -1,0 +1,222 @@
+[
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Back-End Development",
+    "question": "What is Node.js?",
+    "correct_answer": "A JavaScript runtime built on Chrome's V8 JavaScript engine",
+    "incorrect_answers": [
+      "A server-side scripting language",
+      "A database management system",
+      "A front-end framework"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Back-End Development",
+    "question": "Which of the following modules is commonly used for handling HTTP requests in Node.js?",
+    "correct_answer": "express",
+    "incorrect_answers": ["http", "fs", "path"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Back-End Development",
+    "question": "What is the purpose of the 'npm' command in Node.js?",
+    "correct_answer": "To manage packages and dependencies",
+    "incorrect_answers": [
+      "To run JavaScript files",
+      "To create a new Node.js application",
+      "To define the entry point of a Node.js application"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Back-End Development",
+    "question": "Which of the following is a popular middleware for Express.js used for handling authentication?",
+    "correct_answer": "passport",
+    "incorrect_answers": ["bcrypt", "jsonwebtoken", "cookie-parser"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Back-End Development",
+    "question": "What is the purpose of the 'req' and 'res' objects in an Express.js route handler?",
+    "correct_answer": "To represent the HTTP request and response objects",
+    "incorrect_answers": [
+      "To require external modules",
+      "To respond to database queries",
+      "To redirect the client to another route"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Back-End Development",
+    "question": "In NestJS, what is a module used for?",
+    "correct_answer": "Organizing code into cohesive, independent units",
+    "incorrect_answers": [
+      "Defining routes in an application",
+      "Handling HTTP requests and responses",
+      "Creating database schemas"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Back-End Development",
+    "question": "What does the term 'middleware' refer to in the context of Express.js?",
+    "correct_answer": "Functions that have access to the request, response, and the next function in the application's request-response cycle",
+    "incorrect_answers": [
+      "A type of routing strategy",
+      "External libraries used in Express.js",
+      "Authentication tokens sent with every request"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Back-End Development",
+    "question": "Which of the following is NOT a valid HTTP status code?",
+    "correct_answer": "HTTP 411 - Length Required",
+    "incorrect_answers": [
+      "HTTP 200 - OK",
+      "HTTP 404 - Not Found",
+      "HTTP 500 - Internal Server Error"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Back-End Development",
+    "question": "What is the purpose of the 'next' function in an Express.js middleware?",
+    "correct_answer": "To pass control to the next middleware function in the stack",
+    "incorrect_answers": [
+      "To terminate the request-response cycle",
+      "To return a response to the client",
+      "To define the next route in the application"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Back-End Development",
+    "question": "In Node.js, what does the 'EventEmitter' class provide?",
+    "correct_answer": "A way to handle events and trigger event listeners",
+    "incorrect_answers": [
+      "A method for reading and writing files",
+      "A module for making HTTP requests",
+      "A utility for managing dependencies"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Back-End Development",
+    "question": "What is the purpose of the 'npm start' command in a Node.js project?",
+    "correct_answer": "To start the Node.js server",
+    "incorrect_answers": [
+      "To install dependencies specified in the 'package.json' file",
+      "To create a new Node.js application",
+      "To update the Node.js runtime"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Back-End Development",
+    "question": "In a MongoDB database, what is a 'collection'?",
+    "correct_answer": "A group of documents stored in BSON format",
+    "incorrect_answers": [
+      "A field in a MongoDB document",
+      "A table in a relational database",
+      "A reference to another database"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Back-End Development",
+    "question": "What is the purpose of the 'req.params' object in an Express.js route handler?",
+    "correct_answer": "To access parameters in the URL",
+    "incorrect_answers": [
+      "To send data to the client",
+      "To define middleware functions",
+      "To handle HTTP responses"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Back-End Development",
+    "question": "Which of the following is a valid middleware in an Express.js application?",
+    "correct_answer": "body-parser",
+    "incorrect_answers": ["mongoose", "express-validator", "cors"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Back-End Development",
+    "question": "What is the purpose of the 'npm install' command in a Node.js project?",
+    "correct_answer": "To install dependencies specified in the 'package.json' file",
+    "incorrect_answers": [
+      "To create a new Node.js application",
+      "To start the Node.js server",
+      "To update the Node.js runtime"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Back-End Development",
+    "question": "In a MERN stack, what does the 'M' stand for?",
+    "correct_answer": "MongoDB",
+    "incorrect_answers": ["Express.js", "React", "Node.js"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Back-End Development",
+    "question": "What is the purpose of the 'next' function in an Express.js middleware?",
+    "correct_answer": "To pass control to the next middleware function in the stack",
+    "incorrect_answers": [
+      "To terminate the request-response cycle",
+      "To return a response to the client",
+      "To define the next route in the application"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Back-End Development",
+    "question": "In Node.js, what is the purpose of the 'fs' module?",
+    "correct_answer": "To interact with the file system",
+    "incorrect_answers": [
+      "To make HTTP requests",
+      "To create and manage databases",
+      "To handle authentication"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Back-End Development",
+    "question": "Which HTTP method is typically used for updating resources on the server in a RESTful API?",
+    "correct_answer": "PUT",
+    "incorrect_answers": ["GET", "POST", "DELETE"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Back-End Development",
+    "question": "What is the purpose of the 'mongoose' library in a Node.js application?",
+    "correct_answer": "To interact with MongoDB databases",
+    "incorrect_answers": [
+      "To create and manage server-side routes",
+      "To handle HTTP requests and responses",
+      "To validate data in forms"
+    ]
+  }
+]

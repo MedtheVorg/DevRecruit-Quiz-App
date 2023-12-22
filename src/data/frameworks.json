@@ -1,0 +1,94 @@
+[
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Frameworks",
+    "question": "Which JavaScript framework is commonly used for building user interfaces and single-page applications?",
+    "correct_answer": "React",
+    "incorrect_answers": ["Angular", "Vue.js", "Ember.js"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Frameworks",
+    "question": "What is the purpose of the 'express' framework in Node.js?",
+    "correct_answer": "To build web applications and APIs quickly and easily",
+    "incorrect_answers": [
+      "To manage packages and dependencies",
+      "To create and manage database schemas",
+      "To handle authentication in a Node.js application"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Frameworks",
+    "question": "Which PHP framework is known for its elegant syntax and active community?",
+    "correct_answer": "Laravel",
+    "incorrect_answers": ["Symfony", "CodeIgniter", "Zend Framework"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Frameworks",
+    "question": "In the context of Python, which framework is commonly used for web development?",
+    "correct_answer": "Django",
+    "incorrect_answers": ["Flask", "Pyramid", "Tornado"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Frameworks",
+    "question": "Which Ruby framework follows the model-view-controller (MVC) architectural pattern?",
+    "correct_answer": "Ruby on Rails",
+    "incorrect_answers": ["Sinatra", "Hanami", "Cuba"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Frameworks",
+    "question": "What is the primary purpose of the 'Spring' framework in Java?",
+    "correct_answer": "To simplify the development of Java enterprise applications",
+    "incorrect_answers": [
+      "To create graphical user interfaces in Java",
+      "To manage dependencies in a Java project",
+      "To automate testing in Java applications"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Frameworks",
+    "question": "Which JavaScript framework is commonly used for building interactive user interfaces and single-page applications?",
+    "correct_answer": "Vue.js",
+    "incorrect_answers": ["Angular", "React", "Ember.js"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Frameworks",
+    "question": "What is the purpose of the 'Flask' framework in Python?",
+    "correct_answer": "To build web applications quickly and with less code",
+    "incorrect_answers": [
+      "To create and manage databases in Python",
+      "To handle asynchronous programming in Python",
+      "To automate testing in Python applications"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Frameworks",
+    "question": "Which CSS framework is commonly used for creating responsive and mobile-first websites?",
+    "correct_answer": "Bootstrap",
+    "incorrect_answers": ["Foundation", "Bulma", "Tailwind CSS"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Frameworks",
+    "question": "In the context of JavaScript, which framework is commonly used for building server-side applications?",
+    "correct_answer": "Express.js",
+    "incorrect_answers": ["Angular", "React", "Vue.js"]
+  }
+]

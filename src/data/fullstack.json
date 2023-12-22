@@ -1,0 +1,210 @@
+[
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Fullstack Development",
+    "question": "What is the purpose of the 'fetch' function in JavaScript?",
+    "correct_answer": "To make asynchronous HTTP requests and handle responses",
+    "incorrect_answers": [
+      "To create a new array by applying a function to each element of an existing array",
+      "To define a block of code that can be reused in a program",
+      "To add elements to the end of an array"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Fullstack Development",
+    "question": "In a MERN stack, what does the 'R' stand for?",
+    "correct_answer": "React",
+    "incorrect_answers": ["Ruby", "Redux", "REST"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Fullstack Development",
+    "question": "What is the purpose of the 'useState' hook in React?",
+    "correct_answer": "To add state to functional components",
+    "incorrect_answers": [
+      "To fetch data from an API",
+      "To create a new React component",
+      "To handle routing in a React application"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Fullstack Development",
+    "question": "What is the purpose of the 'componentDidMount' lifecycle method in React?",
+    "correct_answer": "To perform actions after a component is rendered for the first time",
+    "incorrect_answers": [
+      "To update the component's state",
+      "To define the initial state of a component",
+      "To handle user input in a form"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Fullstack Development",
+    "question": "What is the purpose of the 'document.getElementById' method in JavaScript?",
+    "correct_answer": "To access an HTML element by its ID",
+    "incorrect_answers": [
+      "To create a new HTML element",
+      "To apply styles to an HTML element",
+      "To remove an HTML element from the DOM"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Fullstack Development",
+    "question": "In a MongoDB database, what is a 'document'?",
+    "correct_answer": "A record in a collection that stores data in BSON format",
+    "incorrect_answers": [
+      "A table in a relational database",
+      "A field in a MongoDB document",
+      "A reference to another collection"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Fullstack Development",
+    "question": "What is the purpose of the 'map' function in JavaScript?",
+    "correct_answer": "To apply a function to each element of an array and create a new array",
+    "incorrect_answers": [
+      "To add elements to the end of an array",
+      "To remove elements from an array",
+      "To sort the elements of an array"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Fullstack Development",
+    "question": "What does the term 'middleware' refer to in the context of Express.js?",
+    "correct_answer": "Functions that have access to the request, response, and the next function in the application's request-response cycle",
+    "incorrect_answers": [
+      "A type of routing strategy",
+      "External libraries used in Express.js",
+      "Authentication tokens sent with every request"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Fullstack Development",
+    "question": "What is the purpose of the 'npm install' command in a Node.js project?",
+    "correct_answer": "To install dependencies specified in the 'package.json' file",
+    "incorrect_answers": [
+      "To create a new Node.js application",
+      "To start the Node.js server",
+      "To update the Node.js runtime"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Fullstack Development",
+    "question": "In a MERN stack, what does the 'N' stand for?",
+    "correct_answer": "Node.js",
+    "incorrect_answers": ["NoSQL", "Nginx", "npm"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Fullstack Development",
+    "question": "In a MERN stack, what does the 'E' stand for?",
+    "correct_answer": "Express.js",
+    "incorrect_answers": ["Elasticsearch", "Ember.js", "Edge.js"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Fullstack Development",
+    "question": "What is the purpose of the 'useEffect' hook in React?",
+    "correct_answer": "To perform side effects in functional components",
+    "incorrect_answers": [
+      "To define the initial state of a component",
+      "To create a new React component",
+      "To handle user input in a form"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Fullstack Development",
+    "question": "What is the purpose of the 'npm run build' command in a React project?",
+    "correct_answer": "To create a production-ready build of the application",
+    "incorrect_answers": [
+      "To start the development server",
+      "To install dependencies specified in the 'package.json' file",
+      "To update the React runtime"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Fullstack Development",
+    "question": "In a MEAN stack, what does the 'M' stand for?",
+    "correct_answer": "MongoDB",
+    "incorrect_answers": ["MySQL", "Microsoft SQL Server", "MariaDB"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Fullstack Development",
+    "question": "What is the purpose of the 'onClick' event in React?",
+    "correct_answer": "To handle a click event on an element",
+    "incorrect_answers": [
+      "To define the initial state of a component",
+      "To create a new React component",
+      "To start an asynchronous operation"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Fullstack Development",
+    "question": "What is the purpose of the 'useHistory' hook in React Router?",
+    "correct_answer": "To access the navigation history object",
+    "incorrect_answers": [
+      "To define routes in a React application",
+      "To create a new React component",
+      "To manage global state in a React application"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Fullstack Development",
+    "question": "What is the purpose of the 'fetch' function in JavaScript?",
+    "correct_answer": "To make asynchronous HTTP requests and handle responses",
+    "incorrect_answers": [
+      "To create a new array by applying a function to each element of an existing array",
+      "To define a block of code that can be reused in a program",
+      "To add elements to the end of an array"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Fullstack Development",
+    "question": "In a MEAN stack, what does the 'E' stand for?",
+    "correct_answer": "Express.js",
+    "incorrect_answers": ["Elasticsearch", "Ember.js", "Edge.js"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Fullstack Development",
+    "question": "What is the purpose of the 'useState' hook in React?",
+    "correct_answer": "To add state to functional components",
+    "incorrect_answers": [
+      "To fetch data from an API",
+      "To create a new React component",
+      "To handle routing in a React application"
+    ]
+  }
+]
