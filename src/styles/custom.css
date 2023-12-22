@@ -1,0 +1,34 @@
+img.flag-item{
+    display: inline-block;
+    width: 100%;
+    height: 350px;
+    border: 2px solid #FCC822;
+    border-radius: 15px;
+}
+
+.content-item{
+    position: absolute;
+    top: 0;
+    background-color: #FCC822;
+    padding: 15px;
+    border-radius: 5px;
+    height: 100%;
+    align-items: center;
+    display: none;
+    font-size: 20px;
+}
+.content{
+    position: relative;
+}
+
+.content:hover .content-item {
+    display: flex;
+    cursor: pointer;
+}
+.content h1 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: #FCC822; 
+    padding: 8px;
+}
