@@ -2,12 +2,16 @@ import { useContext, createContext, useState } from "react";
 
 // custom data
 import { quizData } from "../data";
-import { StoreContextProps, StoreContextType } from "../types";
+
+// importing types
+import {
+  StoreContextProps,
+  StoreContextType,
+  refactoredQuizQuestionType,
+} from "../types";
 
 // create a context with an object as the  initial value
 const storeContext = createContext({});
-
-//
 
 // simple function that consumes the context and returns its values
 export const useStore = () => {
@@ -18,13 +22,17 @@ export const useStore = () => {
 
 // wrapper  componenet
 const StoreContext = ({ children }: StoreContextProps) => {
+  const [quizQuestions, setQuizQuestions] = useState<
+    refactoredQuizQuestionType[]
+  >([]);
   const [quizTakerName, setQuizTakerName] = useState("");
-  const [selectedCategories, setSetSelectedCategories] = useState<string[]>([
-    "FullStack ",
-    "Programming Languages",
-    "Frameworks",
-  ]);
-  const [quizStarted, setQuizStarted] = useState<boolean>(true);
+  const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+
+  const [isQuizStarted, setIsQuizStarted] = useState(false);
+  const [isQuizOngoing, setIsQuizOngoing] = useState<boolean>(false);
+  const [isQuizFinished, setIsQuizFinished] = useState<boolean>(false);
+  const [isChoosingCategories, setIsChoosingCategories] =
+    useState<boolean>(false);
 
   return (
     <storeContext.Provider
@@ -33,9 +41,17 @@ const StoreContext = ({ children }: StoreContextProps) => {
         setQuizTakerName,
         quizData,
         selectedCategories,
-        setSetSelectedCategories,
-        quizStarted,
-        setQuizStarted,
+        setSelectedCategories,
+        isQuizOngoing,
+        setIsQuizOngoing,
+        isQuizFinished,
+        setIsQuizFinished,
+        quizQuestions,
+        setQuizQuestions,
+        isQuizStarted,
+        setIsQuizStarted,
+        isChoosingCategories,
+        setIsChoosingCategories,
       }}
     >
       {children}

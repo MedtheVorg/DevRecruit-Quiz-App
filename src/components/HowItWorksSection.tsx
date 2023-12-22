@@ -1,23 +1,27 @@
 import { motion } from "framer-motion";
+import handGraduate from "../assets/Hands-Graduate.svg";
 
 const HowItWorksSection = () => {
   return (
     <motion.section
-      className="lg:max-w-[1280px] lg:mx-auto h-full p-8 flex flex-col items-center"
-      initial={{ opacity: 0.2, transform: "translateX(10px) scale(.98)" }}
-      animate={{ opacity: 1, transform: "translateX(0px) scale(1)" }}
-      exit={{ opacity: 0, transform: "translateX(-10px) scale(.98)" }}
+      initial={{ opacity: 0, transform: "translateX(20px) " }}
+      animate={{ opacity: 1, transform: "translateX(0px) " }}
+      exit={{ opacity: 0, transform: "translateX(-20px) " }}
       transition={{ duration: 0.2 }}
     >
-      <h1 className="text-4xl text-dark mt-8 text-center font-medium sm:text-5xl md:text-7xl">
-        How it Works ?
-      </h1>
-      <p className="mt-8 text-left">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga tenetur
-        explicabo quod dolor quos autem accusamus atque minima! Ab saepe
-        incidunt tempore sapiente beatae ut architecto reiciendis fugit quos
-        accusamus!
-      </p>
+      <section className="flex flex-col items-center gap-y-8 mt-8 md:text-xl">
+        <div className="text-6xl md:text-8xl">
+          <span className="relative ">
+            <img
+              src={handGraduate}
+              alt="handGraduate image"
+              className={` absolute inline-block top-[-8px] left-[-17px] w-[50px] h-[50px] md:w-[100px] md:h-[100px]  md:top-[-20px] md:left-[-37px] object-cover`}
+            />
+            Dev
+          </span>
+          <span className="text-yellowish">Recruit</span>
+        </div>
+      </section>
     </motion.section>
   );
 };

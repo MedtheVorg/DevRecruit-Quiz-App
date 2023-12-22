@@ -1,26 +1,26 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-import HeroSection from "../components/HeroSection";
-import NavBar from "../components/NavBar";
-import HowItWorksSection from "../components/HowItWorksSection";
-import AboutSection from "../components/AboutSection";
 import ErrorPage from "./ErrorPage";
 import { AnimatePresence } from "framer-motion";
-import WelcomePage from "../components/WelcomeSection";
 import QuizPage from "./QuizPage";
+import {
+  AboutSection,
+  HomeSection,
+  HowItWorksSection,
+  NavBar,
+} from "../components";
 
-export const HomePage = () => {
+export const Layout = () => {
   const location = useLocation();
 
   return (
     <>
-      {location.pathname !== "/quiz" ? <NavBar /> : null}
-      <main className="bg-[#FAFAFA] flex-1 overflow-hidden">
+      <NavBar />
+      <main className="bg-[#FAFAFA]  h-full ">
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
-            <Route index element={<HeroSection />} />
+            <Route index element={<HomeSection />} />
             <Route path="/info" element={<HowItWorksSection />} />
             <Route path="/about" element={<AboutSection />} />
-            <Route path="/welcome" element={<WelcomePage />} />
             <Route path="/quiz" element={<QuizPage />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>

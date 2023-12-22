@@ -6,6 +6,7 @@
 
 body {
   height: 100vh;
+  min-height: 100vh;
   font-family: "Poppins", sans-serif;
 }
 
@@ -28,4 +29,8 @@ body {
 
 .specialbtn:hover {
   @apply border-2 border-yellowish text-yellowish bg-transparent;
+}
+
+.countdown {
+  --value: 0;
 }

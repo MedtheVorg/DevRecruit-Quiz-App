@@ -3,14 +3,25 @@ import { ReactNode } from "react";
 export type StoreContextProps = {
   [index: string]: ReactNode;
 };
+
 export type StoreContextType = {
   quizTakerName?: string;
   setQuizTakerName?: React.Dispatch<React.SetStateAction<string>>;
   quizData?: quizDataType[];
   selectedCategories?: string[];
-  setSetSelectedCategories?: React.Dispatch<React.SetStateAction<string[]>>;
-  quizStarted?: boolean;
-  setQuizStarted?: React.Dispatch<React.SetStateAction<boolean>>;
+  setSelectedCategories?: React.Dispatch<React.SetStateAction<string[]>>;
+  isQuizOngoing?: boolean;
+  setIsQuizOngoing?: React.Dispatch<React.SetStateAction<boolean>>;
+  isQuizFinished?: boolean;
+  setIsQuizFinished?: React.Dispatch<React.SetStateAction<boolean>>;
+  quizQuestions?: refactoredQuizQuestionType[];
+  setQuizQuestions?: React.Dispatch<
+    React.SetStateAction<refactoredQuizQuestionType[]>
+  >;
+  isQuizStarted?: boolean;
+  setIsQuizStarted?: React.Dispatch<React.SetStateAction<boolean>>;
+  isChoosingCategories?: boolean;
+  setIsChoosingCategories?: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 export type quizDataType = {
@@ -29,21 +40,13 @@ export type quizQuestionType = {
 
 export type refactoredQuizQuestionType = {
   question: string;
-  possibleAnswers: refactoredQuizQuestionPossibleAnswerType[];
+  possibleAnswers: PossibleAnswerType[];
 };
-export type refactoredQuizQuestionPossibleAnswerType = {
+export type PossibleAnswerType = {
   text: string;
   isSelected: boolean;
   isCorrect: boolean;
 };
 export type CategoryProps = {
   categoryName: string;
-};
-
-export type selectedAnswerType = {
-  questionIndex: number;
-  selectedAnswerId: number;
-  selectedAnswer: string;
-  correctAnswer: string;
-  isSelected: boolean;
 };

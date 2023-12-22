@@ -9,6 +9,7 @@ export default {
       // yellowish: "#22fc76",
       dark: "#333333",
       lightgray: "#ECECE8",
+      background: "#DBDEE5",
     },
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],

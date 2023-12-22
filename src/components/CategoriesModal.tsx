@@ -4,18 +4,20 @@ import { CategoryProps } from "../types";
 import { useStore } from "../hooks/useStore";
 import { quizData } from "../data";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const CategoriesModal = () => {
   const dialogRef = useRef<HTMLDialogElement>(null);
-  const { selectedCategories, setSetSelectedCategories, setQuizStarted } =
+
+  const { selectedCategories, setSelectedCategories, setIsChoosingCategories } =
     useStore();
 
   useEffect(() => {
     // show modal
     dialogRef.current?.showModal();
 
-    // reset selected categories array (on Component first mount)
-    setSetSelectedCategories!([]);
+    // reset selected categories array (on Component did mount)
+    setSelectedCategories!([]);
 
     // prevent modal from closing when ESC key is pressed
     document.addEventListener("keydown", (event) => {
@@ -32,20 +34,31 @@ const CategoriesModal = () => {
   function handleStartButtonClicked(
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) {
-    console.log("button clicked");
-
     event.preventDefault();
     if (selectedCategories?.length! > 0) {
       dialogRef.current?.close();
-      console.log("quiz started");
 
-      setQuizStarted!(true);
+      setIsChoosingCategories!(false);
     }
   }
 
+  function updateSelectedCategories(categoryName: string) {
+    setSelectedCategories!((prev) => {
+      const exists = prev.find((ele) => ele == categoryName);
+      if (exists) {
+        return prev.filter((ele) => ele != categoryName);
+      } else {
+        return [...prev, categoryName];
+      }
+    });
+  }
   return (
     <>
-      <dialog
+      <motion.dialog
+        initial={{ opacity: 0, transform: "translateX(20px) " }}
+        animate={{ opacity: 1, transform: "translateX(0px) " }}
+        exit={{ opacity: 0, transform: "translateX(-20px) " }}
+        transition={{ duration: 0.2 }}
         id="my_modal_1"
         className="modal backdrop:bg-dark/40"
         ref={dialogRef}
@@ -60,18 +73,9 @@ const CategoriesModal = () => {
           <div className="flex flex-row gap-4 justify-center flex-wrap mt-4 border-t-2 border-b-2 border-b-lightgray border-t-lightgray py-8 ">
             {quizData.map((category, index) => (
               <button
-                onClick={() => {
-                  setSetSelectedCategories!((prev) => {
-                    const exists = prev.find((ele) => ele == category.name);
-                    if (exists) {
-                      return prev.filter((ele) => ele != category.name);
-                    } else {
-                      return [...prev, category.name];
-                    }
-                  });
-                }}
+                onClick={() => updateSelectedCategories(category.name)}
                 key={index}
-                className="focus:outline-transparent"
+                className="focus:outline-transparent "
               >
                 <Categorie categoryName={category.name} />
               </button>
@@ -82,7 +86,6 @@ const CategoriesModal = () => {
               Go Back
             </Link>
             <form method="dialog">
-              {/* if there is a button in form, it will close the modal */}
               <button
                 className="specialbtn disabled:hover:scale-100  disabled:bg-lightgray disabled:hover:border-dark disabled:hover:text-dark disabled:text-dark  focus:outline-yellowish  disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 ease-in-out  "
                 onClick={handleStartButtonClicked}
@@ -94,7 +97,7 @@ const CategoriesModal = () => {
           </div>
           <span className="countdown font-mono text-6xl"></span>
         </div>
-      </dialog>
+      </motion.dialog>
     </>
   );
 };
