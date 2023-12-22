@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useStore } from "../hooks/useStore";
 import _ from "lodash";
 import { quizQuestionType, PossibleAnswerType } from "../types";
