@@ -1,0 +1,210 @@
+[
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Front-End Development",
+    "question": "What does HTML stand for?",
+    "correct_answer": "Hypertext Markup Language",
+    "incorrect_answers": [
+      "Hyperlink and Text Markup Language",
+      "High-Level Text Markup Language",
+      "Home Tool Markup Language"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Front-End Development",
+    "question": "Which CSS property is used to change the text color of an element?",
+    "correct_answer": "color",
+    "incorrect_answers": ["text-color", "font-color", "foreground-color"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Front-End Development",
+    "question": "What is the purpose of the 'alt' attribute in the 'img' tag?",
+    "correct_answer": "To provide alternative text for an image",
+    "incorrect_answers": [
+      "To align the image",
+      "To add a border to the image",
+      "To specify the image source"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Front-End Development",
+    "question": "Which of the following is NOT a valid HTML5 tag?",
+    "correct_answer": "bgcolor",
+    "incorrect_answers": ["section", "article", "header"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Front-End Development",
+    "question": "What is the purpose of the 'head' element in an HTML document?",
+    "correct_answer": "To contain metadata about the document",
+    "incorrect_answers": [
+      "To define the main content of the document",
+      "To create a header for the document",
+      "To specify the background color of the document"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Front-End Development",
+    "question": "Which JavaScript function is used to add or remove classes from an element?",
+    "correct_answer": "classList.toggle()",
+    "incorrect_answers": [
+      "element.toggleClass()",
+      "addClass()",
+      "removeClass()"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Front-End Development",
+    "question": "What is the purpose of the CSS property 'box-sizing: border-box;'?",
+    "correct_answer": "Includes padding and border in the element's total width and height",
+    "incorrect_answers": [
+      "Creates a box around the element",
+      "Adds margin to the element",
+      "Specifies the width and height of the element"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Front-End Development",
+    "question": "Which of the following is a valid way to declare a variable in JavaScript?",
+    "correct_answer": "var x = 10;",
+    "incorrect_answers": ["variable x = 10;", "x := 10;", "let x = 10;"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Front-End Development",
+    "question": "In CSS, how can you select all the elements with the class 'example'?",
+    "correct_answer": ".example",
+    "incorrect_answers": ["#example", "element.example", "class.example"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Front-End Development",
+    "question": "What is the purpose of the 'aria-roles' attribute in HTML?",
+    "correct_answer": "To define roles that can be assigned to elements for accessibility",
+    "incorrect_answers": [
+      "To specify the alignment of an element",
+      "To create a tooltip for an element",
+      "To link to an external resource"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Front-End Development",
+    "question": "What does CSS stand for?",
+    "correct_answer": "Cascading Style Sheets",
+    "incorrect_answers": [
+      "Computer Style Sheets",
+      "Creative Style Sheets",
+      "Colorful Style Sheets"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Front-End Development",
+    "question": "In JavaScript, what does the 'DOM' stand for?",
+    "correct_answer": "Document Object Model",
+    "incorrect_answers": [
+      "Data Object Model",
+      "Digital Object Module",
+      "Dynamic Object Method"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Front-End Development",
+    "question": "What is the purpose of the 'meta' tag in HTML?",
+    "correct_answer": "To provide metadata about the document",
+    "incorrect_answers": [
+      "To create a new HTML element",
+      "To define the main content of the document",
+      "To apply styles to the document"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Front-End Development",
+    "question": "Which CSS property is used to control the spacing between lines of text?",
+    "correct_answer": "line-height",
+    "incorrect_answers": ["letter-spacing", "word-spacing", "text-spacing"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Front-End Development",
+    "question": "What is the purpose of the 'alt' attribute in the 'img' tag?",
+    "correct_answer": "To provide alternative text for an image",
+    "incorrect_answers": [
+      "To align the image",
+      "To add a border to the image",
+      "To specify the image source"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Front-End Development",
+    "question": "In CSS, what does the 'box model' refer to?",
+    "correct_answer": "The combination of content, padding, border, and margin of an element",
+    "incorrect_answers": [
+      "A model for organizing CSS files",
+      "A layout model for positioning elements",
+      "A strategy for optimizing website performance"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Front-End Development",
+    "question": "Which HTML element is used to create a hyperlink?",
+    "correct_answer": "a",
+    "incorrect_answers": ["link", "hyperlink", "url"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Front-End Development",
+    "question": "What is the purpose of the 'aria-label' attribute in HTML?",
+    "correct_answer": "To provide an accessible label for an element",
+    "incorrect_answers": [
+      "To specify the alignment of an element",
+      "To create a tooltip for an element",
+      "To link to an external resource"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Front-End Development",
+    "question": "Which JavaScript keyword is used to declare a variable?",
+    "correct_answer": "var",
+    "incorrect_answers": ["let", "const", "variable"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Front-End Development",
+    "question": "In HTML, which tag is used to create a table?",
+    "correct_answer": "table",
+    "incorrect_answers": ["tr", "td", "div"]
+  }
+]
