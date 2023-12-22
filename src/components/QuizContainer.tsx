@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useStore } from "../hooks/useStore";
 import _ from "lodash";
 import { quizQuestionType, PossibleAnswerType } from "../types";
@@ -17,6 +17,7 @@ const QuizContainer = () => {
   const [currentActiveQuestionIndex, setCurrentActiveQuestionIndex] =
     useState(0);
 
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
   const { minutes, seconds, pause } = useTimer({
     autoStart: true,
     expiryTimestamp: new Date(new Date().getTime() + 5 * 60 * 1000),
@@ -219,7 +220,7 @@ const QuizContainer = () => {
                         });
                       } else {
                         // quiz is over
-                        showScoreModal();
+                        setIsDialogOpen(true);
                       }
                     }}
                   >
@@ -264,6 +265,12 @@ const QuizContainer = () => {
           )}
         </div>
       </div>
+      {isDialogOpen && (
+        <ConfirmModal
+          setIsDialogOpen={setIsDialogOpen}
+          showScoreModal={showScoreModal}
+        />
+      )}
     </motion.div>
   );
 };
@@ -295,3 +302,50 @@ function Timer({
     </div>
   );
 }
+
+const ConfirmModal = ({
+  setIsDialogOpen,
+  showScoreModal,
+}: {
+  setIsDialogOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  showScoreModal: () => void;
+}) => {
+  useEffect(() => {
+    // prevent modal from closing when ESC key is pressed
+    document.addEventListener("keydown", (event) => {
+      if (event.keyCode === 27) event.preventDefault();
+    });
+    // remove event listener when component is unmounted
+    return () => {
+      document.removeEventListener("keydown", (event) => {
+        if (event.keyCode === 27) event.preventDefault();
+      });
+    };
+  }, []);
+
+  function endTheQuiz() {
+    showScoreModal();
+  }
+
+  function resumeQuiz() {
+    setIsDialogOpen(false);
+  }
+  return (
+    <dialog id="my_modal_1" className="modal modal-open " open>
+      <div className="modal-box">
+        <h3 className="font-bold text-lg">
+          Are you sure you want to end the quiz?
+        </h3>
+        <div className="modal-action ">
+          <button onClick={endTheQuiz} className="specialbtn  procced">
+            End Quiz
+          </button>
+
+          <button className=" specialbtn  cancel " onClick={resumeQuiz}>
+            Cancel
+          </button>
+        </div>
+      </div>
+    </dialog>
+  );
+};

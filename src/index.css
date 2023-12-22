@@ -34,3 +34,10 @@ body {
 .countdown {
   --value: 0;
 }
+
+.specialbtn.cancel {
+  @apply bg-success hover:border-transparent hover:text-base-100 hover:scale-95 transition-all duration-300 ease-in-out;
+}
+.specialbtn.procced {
+  @apply bg-error hover:border-transparent hover:text-base-100 hover:scale-95 transition-all duration-300 ease-in-out;
+}
