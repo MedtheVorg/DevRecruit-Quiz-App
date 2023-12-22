@@ -1,30 +1,63 @@
-# React + TypeScript + Vite
+<h1 align="center"> <br/>
+<img src="src/assets/devRecruitIcon.ico"> <br/>
+DevRecruit Web Appliaction
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Elevate your coding expertise with devRecruit! This web application offers quizzes in frontend, backend, and full-stack development. Whether you're a seasoned pro or just starting, test and enhance your skills to stay ahead in the dynamic world of software development. Join us on the journey to technical excellence!
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Here is a working live demo : https://dev-recruit-quiz-app.vercel.app/
 
-## Expanding the ESLint configuration
+<br/>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Hero Section
 
-- Configure the top-level `parserOptions` property like this:
+![Alt text](src/assets/homePage.png)
+<br/>
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Built with
+
+- [React ](https://react.dev/learn) - The library for web and native user interfaces
+
+- [Tailwind](https://tailwindcss.com/docs/installation) - A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup..
+
+- [React-Router](https://reactrouter.com/en/main) - React Router is a popular library for handling routing in React applications.
+
+- [Framer-Motion](https://www.framer.com/motion/) - Framer Motion is a production-ready animation library for React that offers declarative syntax, gestures, drag, and path animations. (for page/modal/section transitions)
+
+<br/>
+
+## How To Use
+
+To clone and run this application, you'll need [Git](https://git-scm.com) installed on your computer after that simply follow these commands :
+
+```bash
+# Clone this repository
+$  git clone https://github.com/MedtheVorg/DevRecruit-Quiz-App.git
+
+# Go into the repository
+$ cd DevRecruit
+
+# install dependencies
+$ npm install
+
+# Run vite development server
+$ npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Team
+
+| [![Mohamed lemaallaoui](https://avatars.githubusercontent.com/u/68510473?v=4)](https://github.com/MedtheVorg) | [![M-ZAKHBAT](https://avatars.githubusercontent.com/u/153525696?v=4)](https://github.com/M-ZAKHBAT) |
+| ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| [Mohamed lemaallaoui](https://github.com/MedtheVorg)                                                          | [M-ZAKHBAT](https://github.com/M-ZAKHBAT)                                                           |
+
+## License
+
+MIT
+
+---
+
+> GitHub - [@MedTheVorg](https://github.com/MedTheVorg)
+
+> GitHub - [@M-ZAKHBAT](https://github.com/M-ZAKHBAT)
